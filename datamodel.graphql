@@ -1,0 +1,13 @@
+type User {
+  id: ID! @id
+  name: String!
+  email: String! @unique
+  isAdmin: Boolean @default(value: false)
+}
+
+type Request {
+  id: ID! @id
+  research: String!
+  email: String!
+  content: String
+}
