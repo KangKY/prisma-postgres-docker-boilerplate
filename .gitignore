@@ -1,1 +1,6 @@
 .env
+node_modules
+generated
+yarn.lock
+package-lock.json
+prisma.yml

@@ -1,13 +1,13 @@
 type User {
   id: ID! @id
+  email: String @unique
   name: String!
-  email: String! @unique
-  isAdmin: Boolean @default(value: false)
+  posts: [Post!]!
 }
 
-type Request {
+type Post {
   id: ID! @id
-  research: String!
-  email: String!
-  content: String
+  title: String!
+  published: Boolean! @default(value: false)
+  author: User @relation(link: INLINE)
 }
