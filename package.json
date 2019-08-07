@@ -1,11 +1,11 @@
 {
   "name": "prisma-docker",
   "version": "1.0.0",
-  "description": "## Getting Started",
+  "description": "let's practice prisma postgres docker",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts",
+    "start": "ts-node src/index.ts",
     "dev": "ts-node-dev --no-notify --respawn --transpileOnly ./",
     "deploy": "prisma deploy -e .env"
   },
